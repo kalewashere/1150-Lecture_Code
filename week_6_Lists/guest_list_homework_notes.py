@@ -1,4 +1,6 @@
 """creating a list for managing a guest list for an event or party"""
+""" this is NOT the homework lab file - I accidentally started homework in lecture code and forgot to delete before commiting - Homework Labs 
+will be sent as a zip file """
 # create an empty list - part 1
 # use a while loop to ask the user for the names of guests - they will enter one by one
 # - add each name to list - should reject duplicate names - print message with a warning about dup print all names -
@@ -10,7 +12,6 @@
 # function instead of re-writing part 3 - part 5
 # part 6 last video has info on this here
 # part 7
-
 
 # part 1 - create empty list
 guest_list = []  # this is an empty list, indicated by brackets. we don't know the guests, so it is blank
