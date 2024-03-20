@@ -27,3 +27,6 @@ print(movie_ratings)
 for movie, values in movie_ratings.items():
     print(f'{movie} has a rating of {values}.') # TODO print all movies and ratings using a loop with .items()
 
+giant_peach_rating = movie_ratings.pop('James and the Giant Peach') # PPT 'your turn' to do - this removes the movie from the dictionary, so with the creted variable i am able to print just the rating
+print(giant_peach_rating)
+print(movie_ratings)

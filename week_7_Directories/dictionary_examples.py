@@ -49,3 +49,18 @@ quiz_scores = {
     'Codyana': [7, 7, 9]
 }
 print(quiz_scores)
+
+# TODO can we print Ally's lowest score?
+for student, list_of_scores in quiz_scores.items():
+    print(f'Student {student} scores are {list_of_scores}.')
+# to get one list
+ally_scores = quiz_scores['Ally']
+# this is a list, and will give us all values assigned to 'Ally'
+for x, score in enumerate(ally_scores):
+    print(f'On quiz {x+1} Ally scored {score}.')
+
+ally_max = max(ally_scores)
+print(f'Ally\'s best score is {ally_max}.')
+# Ally's lowest score using min() operator
+ally_minimum = min(ally_scores)
+print(f'Ally\'s worst score is {ally_minimum}')

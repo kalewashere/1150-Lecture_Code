@@ -3,7 +3,11 @@ colleges = {'Minneapolis College': '1501 Hennepin Ave, Minneapolis',  # dont for
             'Saint Paul College': '235 Marshall Ave, St. Paul',
             'North Hennepin Community College': '7411 85th Ave N, Brooklyn Park',
             'Century College': '3300 Century Ave N, White Bear Lake'}  # the keys listed are the names of colleges
-
+# how many colleges? We use len() for such questions with any sort of data - from numbers to strings, lists,
+# and dictionaries
+number_of_colleges = len(colleges)
+print(f'There are {number_of_colleges} colleges.') # this will count colleges before any additions or subtractions
+# from the dictionary
 for college in colleges:  # prints college names only
     print(college)
 
@@ -60,3 +64,18 @@ if minneapolis_address:
 else:
     print('Minneapolis College\'s address not found.')
 
+# removing data from a list
+for college in colleges:
+    print(college)
+# removing with pop
+colleges.pop('Metro State')
+print(colleges) # everything except Metro State's key-value pair will print
+
+# like lists, pop will return the value for the key
+century_address = colleges.pop('Century College')
+print(century_address) # will print address for century college if in directory
+print(colleges) # key-value pair for century college is removed
+
+# pop with NO arguments do not work
+# need to specify the key of the key-value pair to remove.
+# Dictionaries dont have a concept of a last item
