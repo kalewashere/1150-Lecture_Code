@@ -6,5 +6,5 @@ country_codes = {
     'CN': 'China',
     'FR': 'France',
     'MX': 'Mexico',
-}
+} # <--- end syntax curly bracket
 
